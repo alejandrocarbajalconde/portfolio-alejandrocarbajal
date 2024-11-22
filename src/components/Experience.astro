@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2020 to Present",
+    title: "Product Owner",
+    company: "Nunegal Consulting for Inditex",
+    description:
+      "4+ years of experience as a Product Owner, driving product innovation through agile methodologies. Proven track record in launching products from scratch, leading cross-functional teams, and delivering exceptional user experiences.",
+  },
+  {
+    date: "2019-2020",
+    title: "Software Analyst & Scrum Master",
+    company: "Nunegal Consulting for Inditex",
+    description:
+      "Conducted analysis and managed projects related to store back-office systems, servicing central offices and Inditex subsidiaries. Worked as a full-stack Java developer, contributing to the implementation and improvement of critical systems.",
+  },
+  {
+    date: "2016-2019",
+    title: "Java Software Developer",
+    company: "Nunegal Consulting for Inditex",
+    description:
+      "Developed and maintained Java-based applications for Inditex's store systems. Managed projects focusing on enhancing store back-office functionalities, ensuring efficient service delivery to central offices and subsidiaries. Played a key role as a full-stack Java developer, providing solutions to complex system requirements.",
+  },
+  {
+    date: "2014-2016",
+    title: "Java Software Developer",
+    company: "Altia Consultores",
+    description:
+      "Developed and maintained Java-based applications for Inditex's store systems. Managed projects focusing on enhancing store back-office functionalities, ensuring efficient service delivery to central offices and subsidiaries. Played a key role as a full-stack Java developer, providing solutions to complex system requirements.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

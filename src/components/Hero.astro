@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "Alejandro Carbajal"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/v2/D4D03AQE8fApFJK79xw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718277770727?e=1729123200&v=beta&t=PnlKtaH66EE9yCU6U-f2jJ3NWFapC1qGEhKDO7llbBQ"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/alejandro-carbajal-conde/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>LinkidIn Profile</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-4xl dark:text-white"
+  >
+    Hey, I'm Alejandro Carbajal!
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Product Owner with over <strong>+4 years of experience in web product management and +10 in software development.</strong> 
+    Expert in project management, innovation, and continuous improvement. 
+    From A Coruña, Spain
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:alejandro.carbajal.conde@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/alejandro-carbajal-conde/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
